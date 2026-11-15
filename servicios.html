@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Qithaishi · Getafe</title>
+<meta name="description" content="Servicios de Qithaishi en Getafe.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Qithaishi, inicio"><img src="logo.png" alt="" class="logo-badge"><span class="logo-text"><span class="script">Qithaishi</span><small>masajes y estética · Getafe</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="masajes">Masajes</button>
+  <button class="tab-btn" data-tab="estetica">Estética</button>
+  <button class="tab-btn" data-tab="corporal">Corporal</button>
+  
+</div>
+
+<div class="tab-panel active" id="masajes">
+  <div class="tab-intro"><span class="script">Masajes</span><h2>Masajes</h2><p>Terapéuticos y relajantes.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('descontracturante')"><img src="stock_03.jpg" alt="Masaje terapéutico" loading="lazy"><div class="cat-card-text"><h3>Masaje terapéutico</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('relajante')"><img src="stock_05.jpg" alt="Masajes del mundo" loading="lazy"><div class="cat-card-text"><h3>Masajes del mundo</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('madero')"><img src="stock_04.jpg" alt="Maderoterapia y bambú" loading="lazy"><div class="cat-card-text"><h3>Maderoterapia y bambú</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="estetica">
+  <div class="tab-intro"><span class="script">Estética</span><h2>Estética facial</h2><p>Tu piel, limpia y cuidada.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('facial')"><img src="stock_06.jpg" alt="Limpieza facial profunda" loading="lazy"><div class="cat-card-text"><h3>Limpieza facial profunda</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('unas')"><img src="stock_01.jpg" alt="Uñas en gel" loading="lazy"><div class="cat-card-text"><h3>Uñas en gel</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="corporal">
+  <div class="tab-intro"><span class="script">Corporal</span><h2>Tratamientos corporales</h2><p>Con bonos de 5 y 10 sesiones.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('presoterapia')"><img src="stock_02.jpg" alt="Presoterapia e hidrolinfa" loading="lazy"><div class="cat-card-text"><h3>Presoterapia e hidrolinfa</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('radiofrecuencia')"><img src="stock_04.jpg" alt="Radiofrecuencia y cavitación" loading="lazy"><div class="cat-card-text"><h3>Radiofrecuencia y cavitación</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+
+<p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34652457611" target="_blank" rel="noopener" style="color:var(--red)">652 45 76 11</a> y te asesoramos sin compromiso.</p>
+
+<div class="modal-overlay" id="modal-descontracturante"><div class="modal">
+  <button class="modal-close" onclick="closeModal('descontracturante')" aria-label="Cerrar">×</button>
+  <h3>Masaje terapéutico</h3><p class="modal-sub">Contracturas y tensión</p>
+  <div class="svc-row"><div><div class="svc-name">Masaje descontracturante</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Quiromasaje</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Reflexoterapia</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34652457611?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20masaje%20terap%C3%A9utico" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-relajante"><div class="modal">
+  <button class="modal-close" onclick="closeModal('relajante')" aria-label="Cerrar">×</button>
+  <h3>Masajes del mundo</h3><p class="modal-sub">Para desconectar</p>
+  <div class="svc-row"><div><div class="svc-name">Masaje relajante</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Masaje tailandés</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Shiatsu</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34652457611?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20masajes%20del%20mundo" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-madero"><div class="modal">
+  <button class="modal-close" onclick="closeModal('madero')" aria-label="Cerrar">×</button>
+  <h3>Maderoterapia y bambú</h3><p class="modal-sub">Técnicas especiales</p>
+  <div class="svc-row"><div><div class="svc-name">Maderoterapia</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Bambúterapia</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34652457611?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20maderoterapia%20y%20bamb%C3%BA" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-facial"><div class="modal">
+  <button class="modal-close" onclick="closeModal('facial')" aria-label="Cerrar">×</button>
+  <h3>Limpieza facial profunda</h3><p class="modal-sub">Con punta de diamante</p>
+  <div class="svc-row"><div><div class="svc-name">Limpieza facial profunda</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Microdermoabrasión con punta de diamante</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Masajes estéticos</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34652457611?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20limpieza%20facial%20profunda" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-unas"><div class="modal">
+  <button class="modal-close" onclick="closeModal('unas')" aria-label="Cerrar">×</button>
+  <h3>Uñas en gel</h3><p class="modal-sub">Manos cuidadas</p>
+  <div class="svc-row"><div><div class="svc-name">Uñas en gel</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34652457611?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20u%C3%B1as%20en%20gel" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-presoterapia"><div class="modal">
+  <button class="modal-close" onclick="closeModal('presoterapia')" aria-label="Cerrar">×</button>
+  <h3>Presoterapia e hidrolinfa</h3><p class="modal-sub">Bonos de sesiones</p>
+  <div class="svc-row"><div><div class="svc-name">Presoterapia</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Hidrolinfa</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34652457611?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20presoterapia%20e%20hidrolinfa" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-radiofrecuencia"><div class="modal">
+  <button class="modal-close" onclick="closeModal('radiofrecuencia')" aria-label="Cerrar">×</button>
+  <h3>Radiofrecuencia y cavitación</h3><p class="modal-sub">Bonos de sesiones</p>
+  <div class="svc-row"><div><div class="svc-name">Radiofrecuencia</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Cavitación</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34652457611?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20radiofrecuencia%20y%20cavitaci%C3%B3n" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>Propuesta de diseño para Qithaishi - demo, no es el sitio web oficial del negocio.</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner"><p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p><div class="cookie-actions"><button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button><button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button></div></div>
+<div class="social-fabs"><a class="wa-fab" href="https://wa.me/34652457611?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Qithaishi" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c2.6 1 2.6.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.7L.2 23.8l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5Z"/></svg></a></div>
+<script src="main.js"></script>
+</body>
+</html>
